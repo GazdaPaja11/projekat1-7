@@ -1,0 +1,308 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+}
+/*sivi deo hedera*/
+header{
+    display: block;
+}
+.contact-bar{
+    background-color: rgb(44 44 52);
+}
+.contact-bar-inner{
+    background-color: rgb(44 44 52);
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1260px;
+    width: 100%;
+}
+.contact-bar-left{
+    display: flex;
+    width: auto;
+}
+.contact-bar-content-main, .contact-bar-social-media, .contact-bar-right{
+    list-style-type: none;
+}
+.contact-bar-social-media li{
+    float: left;
+    border-left: 1px solid rgb(94, 94, 94);
+    height: 40px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4px;
+    transition: 0.15s;
+}
+.contact-bar-social-media img{
+    height: 16px;
+}
+.contact-bar-social-media li:hover, .contact-bar-content-main:hover li, .contact-bar-right li{
+    cursor: pointer;
+}
+.facebook:hover img, .x:hover img, .youtube:hover img, .instagram:hover img{
+    filter: brightness(200%);
+}
+.facebook:hover{
+    background-color: rgb(21, 78, 153);
+}
+.x:hover{
+    background-color: #1DA1F2;
+}
+.youtube:hover{
+    background-color: #FF0000;
+}
+.instagram:hover{
+    background-color: #833AB4;
+}
+.contact-bar-content-main img, .address img{
+    height: 16px;
+    margin-right: 2px;
+}
+.contact-bar-content-main li, .contact-bar-right li{
+    float: left;
+    border-left: 1px solid rgb(94, 94, 94);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    color: #CBCACA;
+    font-size: 14px;
+    padding: 0 10px;
+    transition: filter 0.2s ease-in-out 0.2s;
+}
+.search{
+    background-color: #d4000e;
+    border: 0;
+    width: 45px;
+}
+.search img{
+    height: 20px;
+    transition-duration: 0.2s;
+}
+.contact-phone:hover img, .contact-email:hover img, .address:hover img, .search:hover img, .contact-phone:hover p, .contact-email:hover p, .address:hover p{
+    filter: brightness(200%);
+}
+/*logo u hederu*/
+.main-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 145px;
+}
+.logo{
+    min-width: 1260px;
+}
+/*crveni bar u hederu*/
+.nav-bar-city{
+    background-color: rgb(212 0 14);
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bar-city-list{
+    list-style-type: none;
+    min-width: 1260px;
+}
+.nav-bar-city-list-el{
+    float: left;
+    height: 48px;
+    padding: 15px 15px;
+    border-left: 1px solid rgb(255, 125, 125);
+    position: relative;
+}
+.nav-bar-city-list-el a{
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 2px;
+}
+.nav-bar-city-list-el:hover{
+    cursor: pointer;
+    background-color: rgb(230, 0, 15);
+}
+.dropbtn1{
+    background-color: rgb(212 0 14);
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: none;
+    text-shadow: 0px 0px 2px;
+}
+.dropdown-content1{
+    display: none;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    min-width: 200px;
+    z-index: 2;
+    background-color: white;
+    text-shadow: none;
+}   
+.dropdown-content1 a{
+    text-shadow: none;
+}
+.dropdown-content-a1 span{
+    color: rgb(82, 82, 82);
+    text-transform: capitalize;
+    font-size: 14px;
+    display: block;
+    height: 48px;
+    padding: 11px 0 0 11px
+}
+.dropdown-content-a1 span::after{
+    content: ">";
+}
+.dropdown-content-a1:hover span{
+    background-color: rgb(212 0 14);
+    color: white;
+}
+.nav-bar-city-list-el:hover .dropbtn1{
+    cursor: pointer;
+    background-color: rgb(230, 0, 15);
+}
+.nav-bar-city-list-el:hover .dropdown-content1{
+    display: block;
+}
+.active{
+    float: left;
+    height: 48px;
+    padding: 15px 15px;
+    border-left: 1px solid rgb(255, 125, 125);
+    position: relative;
+    cursor: pointer;
+    background-color: rgb(192, 0, 13);
+}
+.active a{
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 2px;
+}
+/*beli bar u hederu*/
+.nav-bar-type{
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+.nav-bar-type-list{
+    list-style-type: none;
+    min-width: 1260px;
+}
+.nav-bar-type-list-el{
+    float: left;
+    height: 48px;
+    padding: 15px 15px; 
+}
+.nav-bar-type-list-el a{
+    color: rgb(82, 82, 82);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.nav-bar-type-list-el:hover{
+    cursor: pointer;
+}
+.nav-bar-type-list-el:hover a{
+    color: rgb(212 0 14);
+}
+.dropbtn{
+    color: rgb(82, 82, 82);
+    text-transform: uppercase;
+    font-size: 14px;
+    border: none;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    background-color: white;
+}
+.dropdown-content-a span{
+    color: rgb(82, 82, 82);
+    text-transform: capitalize;
+    font-size: 14px;
+    display: block;
+    height: 48px;
+    padding: 11px 0 0 11px;
+}
+.dropdown-content-a:hover span{
+    background-color: rgb(212 0 14);
+    color: white;
+}
+.nav-bar-type-list-el:hover .dropbtn{
+    cursor: pointer;
+    color: rgb(212 0 14);
+}
+.nav-bar-type-list-el:hover .dropdown-content{
+    display: block;
+}
+/*animacija za beli bar treba da se prostudira!!!!!*/
+.nav-bar-type-list-el{
+  position: relative;
+}
+.nav-bar-type-list-el:after {
+  content: '';
+  display: block;
+  border-bottom: 2px solid rgb(212 0 14);
+  width: 0;
+  position: absolute;
+  left: 0;
+  top: 45px;
+  -webkit-transition: 1s ease;
+  transition: 0.3s ease;
+}
+.nav-bar-type-list-el:hover:after { 
+  width: 100%;
+}
+@media screen and (max-width: 1100px){
+    .header1{
+        display: none;
+    }
+}
+.header2-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2% 0 2%;
+    border-bottom: 1px solid rgb(215, 215, 215);
+    height: 13vh;
+}
+.header2-main-logo{
+    height: 40px;
+}
+.header2-main-logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.header2-meni-button{
+    border: none;
+    background-color: white;
+    height: 25px;
+    width: 25px;
+}
+.header2-meni-button img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.header2-meni-button:hover{
+    cursor: pointer;
+}
+@media screen and (min-width: 1100px){
+    .header2-inner{
+        display: none;
+    }
+}
